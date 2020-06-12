@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React , {Component} from "react"
+import "./App.css"
+import Facebook from "./Facebook"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component{
+    render(){
+        return(
+            <div className = "App">
+                <div className="head">
+                <header>
+                    <img src="https://image.flaticon.com/icons/png/512/2919/2919616.png" className = "logo" alt="logo"/>
+                    <h2>Welcome to Movie Poster Search!</h2>
+                </header>
+                <h2>Let's get started.</h2>
+                </div>
+                <div className="body">
+                <Facebook />
+                </div>
+            </div>
+        )
+    }
 }
 
-export default App;
+export default App
